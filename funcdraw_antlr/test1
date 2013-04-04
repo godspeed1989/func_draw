@@ -1,0 +1,6 @@
+/*just a test*/
+a=sin(pi/6);
+b=cos(pi/3);
+c=a+b+1;
+d=c*2**2;
+origin is (a,a);

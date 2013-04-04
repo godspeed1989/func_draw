@@ -1,0 +1,41 @@
+/*nuclear*/
+Color is red;
+BOLD is 5;
+Color is blue;
+origin is (190,120);
+for T from 0 to 100 step 10 draw(0,0);
+scale is (70,70/3);
+rot is pi/2+0*pi/3;
+for T from -pi to +pi step pi/60 draw(cos(t),sin(t));
+rot is pi/2+2*pi/3;
+for T from -pi to +pi step pi/60 draw(cos(t),sin(t));
+rot is pi/2-2*pi/3;
+for T from -pi to +pi step pi/60 draw(cos(t),sin(t));
+sleep 1;
+//columb
+bold is 2;
+origin is (330,120);
+scale is (60,60);
+rot is 0;
+FOR T FROM 0 TO 10 STEP 1 DRAW (0,0); //draw origin
+for t from 0 to 3*pi step pi/60 draw(cos(t),sin(t));
+for t from 0 to pi*20 step pi/50 draw
+    ( (1-1/(10/7))*cos(t)+1/(10/7)*cos(-t*((10/7)-1)),
+      (1-1/(10/7))*sin(t)+1/(10/7)*sin(-t*((10/7)-1)) );
+sleep 1;
+//animation
+bold is 1;
+SCALE IS (13,13);
+ORIGIN IS(60, 120);
+Rot is 0;
+FOR T FROM 0 TO 10 STEP 1 DRAW (0,0); //draw origin
+FOR T FROM 0 TO 50 STEP 1 DRAW (1*cos(T),1*sin(T));
+SLEEP 1;
+FOR T FROM 0 TO 70 STEP 1 DRAW (2*cos(T),2*sin(T));
+SLEEP 1;
+FOR T FROM 0 TO 90 STEP 1 DRAW (3.5*cos(T),3.5*sin(T));
+SLEEP 1;
+FOR T FROM 0 TO 110 STEP 1 DRAW (5*cos(T),5*sin(T));
+SLEEP 1;
+
+sleep 10;

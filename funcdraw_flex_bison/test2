@@ -1,0 +1,11 @@
+origin is (150,150);
+for T from 0 to 100 step 10 draw(0,0);
+scale is (80,80/3);
+rot is pi/2+0*pi/3;
+for T from -pi to pi step pi/60 draw(cos(t),sin(t));
+rot is pi/2+2*pi/3;
+for T from -pi to pi step pi/60 draw(cos(t),sin(t));
+rot is pi/2-2*pi/3;
+for T from -pi to pi step pi/60 draw(cos(t),sin(t));
+
+sleep 3;
